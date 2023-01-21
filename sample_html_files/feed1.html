@@ -1,0 +1,116 @@
+
+
+
+<HTML>
+<HEAD>
+    <TITLE>Feedback Form</TITLE>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        BODY {
+            font-size: larger;
+            background-color: rgb(239, 82, 202);
+            background-size: 100vw 100vh;
+
+        }
+
+        div {
+            margin: 10px;
+        }
+
+        input {
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: chartreuse;
+        }
+
+        textarea {
+            background-color: chartreuse;
+        }
+
+        select {
+            background-color: chartreuse;
+        }
+
+        html,
+        body {
+            background-color: rgb(0, 221, 255);
+            animation-name: example;
+            animation-duration: 5s;
+        }
+
+        @keyframes example {
+            from {
+                background-color: rgb(221, 255, 0);
+            }
+            to {
+                background-color: rgb(247, 0, 255);
+            }
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <H1>Feedback Form</H1>
+    <form action="reg1.html">
+        <div>
+            First Name : <INPUT type="text" name="firstname" placeholder="Enter name here">
+            <br>
+        </div>
+        <div>
+            Second Name : <INPUT type="text" name="secondname" placeholder="Enter surname here">
+        </div>
+        <BR>
+        select Gender:
+        <div>
+            <INPUT type="radio" name="gender" value="male">Male<BR>
+        </div>
+        <div>
+            <INPUT type="radio" name="gender" value="female">Female
+            <BR>
+        </div>
+        <div>
+            <label> email:</label>
+            <INPUT type="email" name="mail">
+        </div>
+        <div>
+            <br>
+            please share your feedback:<BR>
+            <TEXTAREA rows="6" cols="50" name="commentfield"></TEXTAREA>
+            <BR>
+        </div>
+        <div>
+            <br>
+            select country:
+            <SELECT name="countychooser">
+                <OPTION value="cork">INDIA</OPTION>
+                <OPTION value="cork">Cork</OPTION>
+                <OPTION value="dublin">Dublin</OPTION>
+                <OPTION value="galway">Galway</OPTION>
+                <OPTION value="kerry">Kerry</OPTION>
+            </SELECT>
+            <BR>
+        </div>
+        <BR>
+        <div>
+            <input type="submit" value="NEW REGISTRATION"/>
+            <INPUT TYPE="reset" value="Reset">
+        </div>
+    </FORM>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

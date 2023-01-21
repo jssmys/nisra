@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-size: larger;
+            background-color: rgb(77, 238, 250);
+            background-size: 100vw 100vh;
+            background-image: url(shadow_bg.jpg)
+        }
+
+        #btn {
+            background-color: red;
+            font-size: 100%;
+            border-style: inset;
+            border-color: yellow;
+        }
+
+        #btn:hover {
+            background-color: yellow;
+            font-size: 100%;
+            border-style: inset;
+            border-color: yellow;
+        }
+        #rst {
+            background-color: red;
+            font-size: 100%;
+        }
+        .cls1 {
+            font-size: 100%;
+            background-color: rgb(244, 62, 207);
+            text-align: center;
+        }
+        #r {
+            font-size: 100%;
+            background-color: rgb(246, 3, 3);
+            text-align: center;
+        }
+        #degree {
+            background-color: rgb(19, 207, 245);
+        }
+
+
+
+
+        html,
+        body {
+
+            background-color: rgb(0, 221, 255);
+            animation-name: example;
+            animation-duration: 5s;
+        }
+
+        @keyframes example {
+            from {
+                background-color: rgb(221, 255, 0);
+            }
+
+            to {
+                background-color: rgb(247, 0, 255);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 style="text-align: center; color: rgb(105, 9, 240);">REGISTRATION FORM</h2>
+    
+        <form action="feed1.html">
+            <ol>
+                <li><label for="name">Name:</label>
+                    <input type="text" id="name">
+                </li><br>
+
+                <li> <label for="date">Date of Birth</label>
+                    <input type="date">
+                </li> <br>
+
+                <li><label for="address">Address</address></label><br><br>
+                    <ul type=">">
+                        <li><label for="street">Street:</label>
+                            <input type="text" name="street" />
+                        </li><br>
+                        <li><label for="town">town:</label>
+                            <input type="text" name="" />
+                        </li><br>
+                        <li><label for="state">state:</label>
+                            <input type="text" name="" />
+                        </li><br>
+                        <li><label for="pincode">pincode:</label>
+                            <input type="text" name="" />
+                        </li><br>
+                    </ul>
+
+                    <div id="degree">
+                <li><label for="dept">select degree</label>
+                    <ol>
+                        <input type="radio" name="same">
+                </li><li>
+                <label for="cs">BSC </label><br>
+                <input type="radio" name="same">
+                <label>BCOM </label><br>
+                <input type="radio" name="same">
+                <label>BBA</label><br>
+                <input type="radio" name="same">
+                <label>LLB</label><br>
+                <input type="radio" name="same">
+                <label>MBBS</label><br>
+            </ol>
+                </li>
+            
+
+    </div>
+    <br>
+
+    <li><label for="selection">SELECT HOBBIES: </label></li>
+    <select name="interest" id="interest" class="cls1">
+        <option value="select">Select </option>
+        <option value="ps">public speaking</option>
+        <option value="rv">Reading novels</option>
+        <option value="ws">Watching sports</option>
+        <option value="ps">Playing Sports</option>
+        <option value="dance">Dance</option>
+
+    </select><br><br>
+
+    <li><label for="choose"> SELECT LANGUAGES</label></li>
+    <ul>
+        <li><label> KANNADA</label>
+            <input type="checkbox" id="check" name="check"><br>
+        <li><label> ENGLISH</label>
+            <input type="checkbox" id="check" name="check">
+        <li><label> HINDI</label>
+            <input type="checkbox" id="check" name="check">
+    </ul>
+    <br>
+    <label for="comments" style="font-size:30px;">Furthur comments:</label>
+    <textarea id="comments" name="comments" rows="5" cols="50">comment.......</textarea><br><br>
+
+    <input type="submit" value="send feedback" id="btn" />
+    <input type="reset" value="reset" id="rst" />
+
+    </ol>
+    </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

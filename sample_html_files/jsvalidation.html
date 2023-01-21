@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<script>
+			function GEEKFORGEEKS() {
+				var name =
+					document.forms.RegForm.Name.value;
+				var email =
+					document.forms.RegForm.EMail.value;
+				var phone =
+					document.forms.RegForm.Telephone.value;
+				var password =
+					document.forms.RegForm.Password.value;
+				
+				if (name == "" ) {
+					window.alert("Please enter your name properly.");
+			       return false;
+				}
+
+				if (email == "" ) {
+					window.alert("Please enter a valid e-mail address.");
+					return false;
+				}
+				
+				if (password == "" || password.length <6) {
+					window.alert("Please enter your password");
+					return false;
+				}
+
+				if (phone == "") {
+					alert("Please enter valid phone number.");
+					return false;
+				}
+
+				return true;
+			}
+		</script>
+
+		<style>
+			/* div {
+				box-sizing: border-box;
+				width: 100%;
+				border: 100px solid black;
+				float: left;
+				align-content: center;
+				align-items: center;
+			}
+
+			form {
+				margin: 0 auto;
+				width: 600px;
+			} */
+
+            div {
+            margin: 10;
+            width: 600px;
+            background-color: aqua;
+     
+        }
+        body{
+            /* background-image: url("https://pngtree.com/freebackground/professional-blue-hexagon-tehcnology-background-for-business_1416228.html"); */
+            /* background-color: rgb(217, 255, 0); */
+            background-image: url("paper.jpg");
+        }
+		</style>
+	</head>
+
+	<body>
+		<h1 style="text-align: center;">REGISTRATION FORM</h1>
+		<form name="RegForm" onsubmit="return GEEKFORGEEKS()" method="post" action="valid.html">
+			
+<p>Name: <input type="text"
+							size="65" name="Name" /></p>
+
+			<br />
+			
+	
+			
+<p>E-mail Address: <input type="email"
+							size="65" name="EMail" /></p>
+
+			<br />
+			
+<p>Password: <input type="password"
+						size="65" name="Password" /></p>
+
+			<br />
+			
+<p>Telephone: <input type="text"
+						size="65" name="Telephone" /></p>
+
+			<br />
+
+<p>
+				<input type="submit"
+					value="send" name="Submit" />
+				<input type="reset"
+					value="Reset" name="Reset" />
+			</p>
+
+		</form>
+	</body>
+</html>
