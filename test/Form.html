@@ -1,0 +1,129 @@
+<head>
+    <title>Registration Form</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(216, 186, 220);
+        }
+
+        body {
+            background-color:rgba(162, 237, 240, 0.905);
+            background-color: rgb(0, 0, 0);
+            /* background-image:url(giphy\ \(1\).gif ); */
+            background-position: right;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-size: 26px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .form1 {
+            border-style: solid;
+            background-color: rgb(161, 239, 245);
+            padding: 90px;
+            margin: auto;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        #sub {
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        div.chk {
+            text-align: left;
+        }
+        
+        div.dep{
+            text-align: left;
+        }
+
+        #p1 {
+            font-size: 28px;
+            background-color: rgb(216, 186, 220);
+        }
+        sub{font-size: 26px;
+        font-family: 'Times New Roman', Times, serif;}
+
+
+
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <form action="thank.html">
+    <div class="form1">
+            <h1>Registration Form</h1>
+            <h2>Contact Information</h2>
+            <label>Enter the first Name: </label>
+            <input type="text"id="name"required></p>
+
+            <label>Enter the last Name: </label>
+            <input type="text"id="lname"required></p>
+
+            <label>Enter the Register Number: </label>
+            <input type="number"id="rname"required></p>
+
+            <label>Enter the Email: </label>
+            <input type="email"id="ename"required></p>
+
+            <p>Gender :
+                Male <input type="radio"name="gender"id=""required>
+                Female <input type="radio"name="gender"id=""required></p>
+
+            <label>Address</label>
+            <textarea name="Address"id="Address"required></textarea>
+            <br>
+            <pid="p1"><b>Select Your Department :</b></p>
+            <div class="dep">
+            <br><input type="radio"name="dep"required> CSE <br>
+            <br><input  name="dep"type="radio"required> IS <br>
+            <br><input type="radio"  name="dep"required> Architecture <br>
+            <br><input type="radio"name="dep"required> CP <br>
+            <br><input type="radio"name="dep"required> ADFT <br>
+            <br><input type="radio"name="dep"required> EC <br>
+            </div>
+            <hr>
+            <pid="p1"><b>Select your Hobbies</b></p>
+            <div class="chk">
+                <input type="checkbox"id="chkc1"/> Playing Outdoor <br><br>
+                <input type="checkbox"id="chkc2"/> Playing indoor games <br><br>
+                <input type="checkbox"id="chkc3"/> Reading Fiction Books <br><br>
+                <input type="checkbox"id="chkc4"/> Gardening <br><br>
+                <input type="checkbox"id="chkc4"/> Self Care <br><br>
+                <input type="checkbox"id="chkc4"/> Listening to Music <br><br>
+            </div>
+            <pid="p1"><b>Select Your Semester :</b></p>
+            <select name="select sem"id="sem"required>
+                <option value="">---Select The Semester---</option>
+                <option value="1st">1st Sem</option>
+                <option value="2nd">2nd Sem</option>
+                <option value="3rd">3rd Sem</option>
+                <option value="4th">4th Sem</option>
+                <option value="5th">5th Sem</option>
+                <option value="6th">6th Sem</option>
+            </select>
+            <hr>
+            <pid="p1"><b>Activities that you are Participating in collage</b></p>
+            <div class="chk">
+                <input type="checkbox" id="chk1"/>NCC <br><br>
+                <input type="checkbox" id="chk2"/>NSS <br><br>
+                <input type="checkbox" id="chk3"/>Cultural <br><br>
+                <input type="checkbox" id="chk4"/>Indoor Sports <br><br>
+                <input type="checkbox" id="chk4"/>Outdoor Sports<br><br>
+                <input type="checkbox" id="chk4"/>Debetting and seminars <br><br>
+            </div>
+       
+            <center><input type="submit" value="Submit" id="sub"></center>
+        </form>
+</body>
+</html>
+
